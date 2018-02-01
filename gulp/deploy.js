@@ -56,7 +56,8 @@ module.exports = function(gulp, config) {
 			'node_modules/systemjs/dist/system.src.js',
 			'node_modules/moment/min/moment.min.js',
 			'node_modules/crypto-js/crypto-js.js',
-			'node_modules/lodash/lodash.min.js'
+			'node_modules/lodash/lodash.min.js',
+			'node_modules/tslib/tslib.js'
 		], { base: 'node_modules' })
 			.pipe(gulp.dest(`.tmp/static_resources/${config.resources.node_module_resource_name}`));
 	});

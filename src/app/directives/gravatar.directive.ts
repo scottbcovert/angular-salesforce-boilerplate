@@ -1,5 +1,5 @@
 import { Directive, Input, ElementRef, OnInit, OnChanges, SimpleChanges } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { HttpClient, Response } from '@angular/common/http';
 import { MD5 } from 'crypto-js';
 
 @Directive({

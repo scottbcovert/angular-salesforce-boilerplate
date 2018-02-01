@@ -1,7 +1,8 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { routing, appRoutingProviders } from './app.routing';
 
@@ -17,8 +18,9 @@ import { NewlineToBreakPipe, KeysPipe } from './pipes/index'
 @NgModule({
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
         FormsModule,
-        HttpModule,
+        HttpClientModule,
         routing
     ],
     declarations: [
@@ -26,7 +28,6 @@ import { NewlineToBreakPipe, KeysPipe } from './pipes/index'
         HomeComponent,
         ContactComponent,
         CreateContactComponent,
-
         ContentEditableModelDirective,
         GravatarDirective,
         NewlineToBreakPipe,

@@ -1,16 +1,16 @@
-# The Easier Way to Combine Salesforce and Angular 2
+# The Easier Way to Combine Salesforce and Angular
 
-**Notice:** I am putting development for this on hold for the time being as I just started a new job and have projects that need my attention. If anyone is interested in being added as a collaborator please let me know.
+**Notice:** This project was originally forked from Chris Watson's [salesforce-angular2-boilerplate repository](https://github.com/watzon/salesforce-angular2-boilerplate) and updated to work with the latest stable version of Angular (5.2.3 at the time of this writing)
 
-This boilerplate, which is still largely unifinished, combines the powers of [Gulp](http://gulpjs.com/), [JSForce](http://jsforce.github.io), [Angular 2](http://angular.io), and [Salesforce](https://salesforce.com) and allows you to develop and test your Salesforce applications completely locally. Deploying is as easy as running `gulp` or you can be more specific and just `gulp deploy:classes`.
+This boilerplate, which is still largely unifinished, combines the powers of [Gulp](http://gulpjs.com/), [JSForce](http://jsforce.github.io), [Angular](http://angular.io), and [Salesforce](https://salesforce.com) and allows you to develop and test your Salesforce applications completely locally. Deploying is as easy as running `gulp` or you can be more specific and just `gulp deploy:classes`.
 
 ### Getting set up
 
-Setting up is super easy. First clone or fork this repository to your local machine with `git clone https://github.com/iDev0urer/salesforce-angular2-boilerplate.git` or, if you forked the repo, do `git clone YOUR-REPO-URL`. Then go to the salesforce-angular2-boilerplate directory with `cd salesforce-angular2-boilerplate`.
+Setting up is super easy. First clone or fork this repository to your local machine with `git clone https://github.com/scottbcovert/angular-salesforce-boilerplate` or, if you forked the repo, do `git clone YOUR-REPO-URL`. Then go to the angular-salesforce-boilerplate directory with `cd angular-salesforce-boilerplate`.
 
 You will need [NodeJs](http://nodejs.org) in order to work with this so make sure you have that installed.
 
-Once you're in the salesforce-angular2-boilerplate directory run `npm install`. This project also uses **gulp 4**, so install that:
+Once you're in the angular-salesforce-boilerplate directory run `npm install`. This project also uses **gulp 4**, so install that:
 
 ```
 npm rm -g gulp
@@ -51,11 +51,11 @@ module.exports = {
 
 ### Running the example
 
-This boilerplate comes with a working example of a **contact management application**. To get it running just run the `gulp` command while in the salesforce-angular2-boilerplate directory. It will open a local server at [http://localhost:8080](http://localhost:8080) where you should be able to view the working application. When you're ready to deploy the application and test it in Salesforce just run `gulp deploy` and wait for the application to finish deploying.
+This boilerplate comes with a working example of a **contact management application**. To get it running just run the `gulp` command while in the angular-salesforce-boilerplate directory. It will open a local server at [http://localhost:8085](http://localhost:8085) where you should be able to view the working application. When you're ready to deploy the application and test it in Salesforce just run `gulp deploy` and wait for the application to finish deploying.
 
 ### File Tree
 
-The way I have structured this project bears describing; whether you are new to Salesforce, Angular 2, both, or just need some explianation.
+The way I have structured this project bears describing; whether you are new to Salesforce, Angular, both, or just need some explianation.
 
 #### gulp
 
@@ -118,7 +118,7 @@ The `src` directory contains all of the Source files; Typescript, javascript, sa
 
 ##### app
 
-The app directory contains all of the Angular 2 files. These are separated into categories such as `components`, `directives`, `pipes`, `resolves`, `services`, and `shared`.
+The app directory contains all of the Angular files. These are separated into categories such as `components`, `directives`, `pipes`, `resolves`, `services`, and `shared`.
 
 ##### salesforce
 
